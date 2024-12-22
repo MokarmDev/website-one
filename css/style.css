@@ -53,10 +53,11 @@ nav .menu ul li {
 /* strat  header */
 
 header {
-    background-image: url(../images/Container.png);
+    background-image: url(../assets/images/Container.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 700px;
+    display: flex;
 }
 
 header .info {
@@ -79,6 +80,8 @@ header .info p {
 header .info button {
     font-family: inherit;
     font-size: 18px;
+    height: 52px;
+
     background: linear-gradient(to bottom, #E50000 0%, #E50000 100%);
     color: white;
     padding: 0.8em 1.2em;
