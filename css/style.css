@@ -2,11 +2,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1E1E1E;
+    font-family: "Manrope", serif;
 }
 
+/* genral */
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* start navbar */
@@ -68,7 +75,7 @@ header .info {
 }
 
 header .info h1 {
-    font-size: 58px;
+    font-size: 48px;
 }
 
 header .info p {
@@ -134,4 +141,60 @@ header .info button:hover .svg-wrapper {
 
 header .info button:hover svg {
     transform: rotate(45deg);
+}
+header .row{
+    justify-content: center;
+}
+header .row .icons {
+    display: flex;
+    margin-left: 20px;
+}
+header .row .icons .icon-card{
+   height: 48px;
+   width: 48px;
+   border-radius: 8px;
+   background-color: #0F0F0F;
+   margin-right: 8px;
+}
+header .row .icons .icon-card img{
+    margin-top: 10px;
+}
+/* end header */
+
+/* strat explore */
+.explore .card {
+    background-color: #262626;
+    color: #fff;
+    height: 342px;
+    width: 295.4px;
+    text-align: center;
+    border-radius: 12px;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    flex: 23.5%;
+    max-width: 23.5%;
+  
+}
+
+.explore .card:not(:nth-last-of-type(2)) {
+    margin-right: 2%;  
+}
+
+.explore .card img {
+    width: 237px;
+    height: 252px;
+}
+.explore .card .detials{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.explore .card .detials h2{
+    margin: 0;
+    padding: 0;
+}
+.explore .card .detials i{
+    margin-top: 7px;
 }
