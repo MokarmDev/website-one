@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1E1E1E;
+    /* background-color: #1E1E1E; */
     font-family: "Manrope", serif;
+    height: 6000px;
 }
 
 /* genral */
@@ -142,23 +143,28 @@ header .info button:hover .svg-wrapper {
 header .info button:hover svg {
     transform: rotate(45deg);
 }
-header .row{
+
+header .row {
     justify-content: center;
 }
+
 header .row .icons {
     display: flex;
     margin-left: 20px;
 }
-header .row .icons .icon-card{
-   height: 48px;
-   width: 48px;
-   border-radius: 8px;
-   background-color: #0F0F0F;
-   margin-right: 8px;
+
+header .row .icons .icon-card {
+    height: 48px;
+    width: 48px;
+    border-radius: 8px;
+    background-color: #0F0F0F;
+    margin-right: 8px;
 }
-header .row .icons .icon-card img{
+
+header .row .icons .icon-card img {
     margin-top: 10px;
 }
+
 /* end header */
 
 /* strat explore */
@@ -173,28 +179,85 @@ header .row .icons .icon-card img{
     margin-bottom: 60px;
     flex: 23.5%;
     max-width: 23.5%;
-  
+
 }
 
 .explore .card:not(:nth-last-of-type(2)) {
-    margin-right: 2%;  
+    margin-right: 2%;
 }
 
 .explore .card img {
     width: 237px;
     height: 252px;
 }
-.explore .card .detials{
+
+.explore .card .detials {
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
     padding-left: 30px;
     padding-right: 30px;
 }
-.explore .card .detials h2{
+
+.explore .card .detials h2 {
     margin: 0;
     padding: 0;
 }
-.explore .card .detials i{
+
+.explore .card .detials i {
     margin-top: 7px;
+}
+
+/* end explore */
+
+/* start banner */
+.banner {
+    height: 250px;
+    width: 1283px;
+    background-image: url('../assets/images/banner.png');
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8) 0%, rgba(0, 0, 0, 0.8) 35%,
+            rgba(229, 0, 0, 0.8) 100%);
+}
+
+.banner .info {
+    color: #fff;
+    position: absolute;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.inputs input:not(:last-of-type) {
+    width: 300px;
+    border-radius: 8px;
+    height: 52px;
+    border: 1px solid #c2c2c2;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.inputs input:last-of-type {
+    width: 300px;
+    border-radius: 8px;
+    height: 52px;
+    border: 1px solid #c2c2c2;
+    background-color: transparent;
+    color: #000;
+    font-size: 24px;
+    padding-left: 10px;
+    margin-right: 10px;
 }
